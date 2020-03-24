@@ -6,7 +6,7 @@ let locale = '';
   providers: [
     {
       provide: APP_INITIALIZER,
-      //useValue: AppInitializerSync,
+      //useValue: AppInitializerSync, // uncomment to see the same happening when the app initializer is synchronous
       useValue: AppInitializerAsync,
       multi: true,
     },
